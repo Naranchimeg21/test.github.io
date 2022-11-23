@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <script type="text/javascript">
+   function parity(num) {
+    if (num%2 == 0) {
+      return("even");
+    } else {
+      return("odd");
+    }
+  }
+  </script>
+</head>
+<body>
+      Тоо оруулна уу:
+      <input type="number" name="number" size="0" value="0"
+        onchange="
+          if(parity(this.value)) { 
+            document.getElementsByClassName('too')[0].innerHTML='Тоо '+this.value + ' : ' + 'тэгш' }
+          else{document.getElementsByClassName('too')[0].innerHTML='Тоо '+this.value + ' : ' + 'сондгой' }"
+           />
+     <div class="too"></div>
+</body>
+</html>
